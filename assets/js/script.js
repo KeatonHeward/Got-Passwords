@@ -11,7 +11,7 @@ var random = "";
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-function writePassword() {
+function generatePassword() {
 
   var pLength = window.prompt("How long would you like your password? 8-128 characters.")
   if (pLength <= 7 || pLength >= 129) {
@@ -43,8 +43,7 @@ function writePassword() {
     random += user.charAt(Math.floor(Math.random() * user.length))
   }
   
-    var passwordText = document.querySelector("#password");
-    passwordText.value = password.join("");
+return random
 
 };
 
