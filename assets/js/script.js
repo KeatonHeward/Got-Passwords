@@ -3,8 +3,7 @@ var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowers = "abcdefghijklmnopqrstuvwxyz";
 var numbers = "0123456789";
 var specials = "!#%&'()*+,-./:;<=>?@]^_`{|}~]";
-var user = "";
-var random = "";
+
 
 
 // Get references to the #generate element
@@ -13,6 +12,9 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function generatePassword() {
 
+  var user = "";
+var random = "";
+  
   var pLength = window.prompt("How long would you like your password? 8-128 characters.")
   if (pLength <= 7 || pLength >= 129) {
     alert("password must be within the parameters");
